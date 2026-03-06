@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Waves, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+
+const LOGO_URL = "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69aac8b4ee3e86a32fa7d35f/f57aded0d_Harborlogo.png";
 
 const navLinks = [
   { label: "Platform", id: "platform" },
@@ -37,14 +39,8 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-cyan-500 to-teal-400 flex items-center justify-center shadow-[0_0_20px_rgba(0,212,255,0.3)]">
-            <Waves className="w-4 h-4 text-[#03060f]" />
-          </div>
-          <div>
-            <span className="text-white font-black text-sm tracking-tight">H.A.R.B.O.R</span>
-            <span className="text-slate-500 font-light text-sm"> Vision</span>
-          </div>
+        <div className="flex items-center gap-2">
+          <img src={LOGO_URL} alt="H.A.R.B.O.R Vision" className="h-10 w-auto" />
         </div>
 
         {/* Desktop */}
