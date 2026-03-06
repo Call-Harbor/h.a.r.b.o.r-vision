@@ -100,11 +100,15 @@ export default function HeroSection() {
           transition={{ duration: 0.8 }}
           className="flex justify-center mb-10"
         >
-          <span className="inline-flex items-center gap-3 px-6 py-2.5 rounded-full border border-cyan-400/25 bg-cyan-400/[0.06] text-cyan-300 text-xs font-semibold tracking-[0.25em] uppercase backdrop-blur-sm">
-            <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse shadow-[0_0_8px_rgba(0,212,255,0.8)]" />
+          <motion.span 
+            animate={{ boxShadow: ["0 0 20px rgba(0,212,255,0.3)", "0 0 40px rgba(0,212,255,0.5)", "0 0 20px rgba(0,212,255,0.3)"] }}
+            transition={{ duration: 3, repeat: Infinity }}
+            className="inline-flex items-center gap-3 px-6 py-2.5 rounded-full border border-cyan-400/40 bg-cyan-400/[0.08] text-cyan-300 text-xs font-semibold tracking-[0.25em] uppercase backdrop-blur-md"
+          >
+            <motion.span animate={{ scale: [1, 1.2, 1] }} transition={{ duration: 2, repeat: Infinity }} className="w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_12px_rgba(0,212,255,1)]" />
             Next-Generation Maritime Intelligence
-            <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse shadow-[0_0_8px_rgba(0,212,255,0.8)]" />
-          </span>
+            <motion.span animate={{ scale: [1, 1.2, 1] }} transition={{ duration: 2, repeat: Infinity, delay: 0.3 }} className="w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_12px_rgba(0,212,255,1)]" />
+          </motion.span>
         </motion.div>
 
         {/* Giant title */}
