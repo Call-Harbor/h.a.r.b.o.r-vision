@@ -168,10 +168,6 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 1.3 }}
           className="mt-14 flex flex-col sm:flex-row gap-5 justify-center items-center"
         >
-          <button className="group relative inline-flex items-center gap-3 px-12 py-5 rounded-full bg-gradient-to-r from-cyan-500 to-teal-400 text-[#01030a] font-black text-sm tracking-widest uppercase overflow-hidden transition-all duration-300 hover:shadow-[0_0_80px_rgba(0,212,255,0.5)] hover:scale-105">
-            <span className="relative z-10">Request a Demo</span>
-            <ArrowRight className="relative z-10 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </button>
           <button className="inline-flex items-center gap-2 px-10 py-5 rounded-full border border-white/10 text-slate-300 font-medium text-sm tracking-widest uppercase backdrop-blur-sm hover:border-cyan-500/40 hover:text-white hover:bg-white/5 transition-all duration-300">
             Explore the Platform
           </button>
