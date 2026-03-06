@@ -117,12 +117,15 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
         >
-          <h1 className="font-black tracking-tighter leading-[0.85] select-none"
+          <motion.h1 
+            animate={{ textShadow: ["0 0 80px rgba(0,212,255,0.3), 0 0 20px rgba(0,212,255,0.1)", "0 0 150px rgba(0,212,255,0.5), 0 0 60px rgba(0,212,255,0.2)", "0 0 80px rgba(0,212,255,0.3), 0 0 20px rgba(0,212,255,0.1)"] }}
+            transition={{ duration: 4, repeat: Infinity }}
+            className="font-black tracking-tighter leading-[0.85] select-none"
             style={{ fontSize: "clamp(4rem, 18vw, 18rem)" }}>
-            <span className="text-white" style={{ textShadow: "0 0 120px rgba(0,212,255,0.25), 0 0 40px rgba(0,212,255,0.1)" }}>
+            <span className="text-white">
               H.A.R.B.O.R
             </span>
-          </h1>
+          </motion.h1>
           <motion.h2
             initial={{ opacity: 0, letterSpacing: "0.6em" }}
             animate={{ opacity: 1, letterSpacing: "0.3em" }}
