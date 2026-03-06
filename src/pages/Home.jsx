@@ -19,6 +19,7 @@ export default function Home() {
       <section id="features"><FeaturesSection /></section>
       <section id="how-it-works"><HowItWorks /></section>
       <StatsSection />
+      <NexusVectisSection />
       <section id="contact"><ContactSection /></section>
       <CTASection />
       <Footer />
