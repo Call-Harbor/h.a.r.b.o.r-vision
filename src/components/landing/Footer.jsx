@@ -20,9 +20,9 @@ export default function Footer() {
           <div>
             <h4 className="text-slate-300 font-bold text-xs tracking-[0.2em] uppercase mb-6">Get in Touch</h4>
             <div className="space-y-4">
-              <a href="mailto:hello@harbor.vision" className="flex items-center gap-3 text-slate-400 hover:text-cyan-400 transition-colors text-sm">
+              <a href="mailto:ai@harborvision.dev" className="flex items-center gap-3 text-slate-400 hover:text-cyan-400 transition-colors text-sm">
                 <Mail className="w-4 h-4 shrink-0" />
-                hello@harbor.vision
+                ai@harborvision.dev
               </a>
               <div className="flex items-start gap-3 text-slate-400 text-sm">
                 <MapPin className="w-4 h-4 shrink-0 mt-0.5" />
