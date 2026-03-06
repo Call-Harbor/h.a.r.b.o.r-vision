@@ -54,9 +54,6 @@ export default function Navbar() {
               {link.label}
             </button>
           ))}
-          <button onClick={() => scrollTo("contact")} className="ml-2 px-6 py-2.5 rounded-full bg-gradient-to-r from-cyan-500/15 to-teal-400/10 border border-cyan-500/25 text-cyan-300 text-sm font-semibold hover:from-cyan-500/25 hover:to-teal-400/20 hover:shadow-[0_0_20px_rgba(0,212,255,0.15)] transition-all duration-300">
-            Book Demo
-          </button>
         </div>
 
         {/* Mobile toggle */}
@@ -81,9 +78,6 @@ export default function Navbar() {
                 {link.label}
               </button>
             ))}
-            <button className="mt-2 px-5 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-teal-400 text-[#03060f] text-sm font-black tracking-wider uppercase">
-              Book Demo
-            </button>
           </div>
         </motion.div>
       )}
