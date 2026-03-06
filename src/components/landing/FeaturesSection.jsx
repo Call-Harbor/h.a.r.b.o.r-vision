@@ -76,7 +76,7 @@ export default function FeaturesSection() {
               transition={{ delay: i * 0.08, duration: 0.7 }}
               onMouseEnter={() => setHovered(i)}
               onMouseLeave={() => setHovered(null)}
-              className="group relative p-9 rounded-3xl border border-slate-800/70 bg-[#060b1a]/60 backdrop-blur-sm hover:border-cyan-500/30 transition-all duration-500 overflow-hidden cursor-default"
+              className="group relative p-9 rounded-3xl border border-slate-800/70 bg-[#060b1a]/60 backdrop-blur-sm hover:border-cyan-500/50 transition-all duration-500 overflow-hidden cursor-default hover:shadow-[0_0_40px_rgba(0,212,255,0.2)]"
             >
               {/* Top line on hover */}
               <motion.div
