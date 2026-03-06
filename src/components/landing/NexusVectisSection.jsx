@@ -117,7 +117,7 @@ export default function NexusVectisSection() {
               transition={{ delay: i * 0.06, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
               onMouseEnter={() => setHovered(i)}
               onMouseLeave={() => setHovered(null)}
-              className="group relative p-7 rounded-2xl border border-slate-800/70 bg-[#060b1a]/80 hover:border-cyan-500/30 transition-all duration-500 overflow-hidden cursor-default"
+              className="group relative p-7 rounded-2xl border border-slate-800/70 bg-[#060b1a]/80 hover:border-cyan-500/50 transition-all duration-500 overflow-hidden cursor-default hover:shadow-[0_0_30px_rgba(0,212,255,0.15)]"
             >
               {/* Glow on hover */}
               <motion.div
