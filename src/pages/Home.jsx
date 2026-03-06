@@ -17,6 +17,7 @@ export default function Home() {
       <Navbar />
       <section id="platform"><HeroSection /></section>
       <AboutEngine />
+      <AboutUsSection />
       <section id="features"><FeaturesSection /></section>
       <section id="how-it-works"><HowItWorks /></section>
       <StatsSection />
