@@ -29,7 +29,7 @@ export default function Footer() {
                 <div>
                   <p>Danas Have 65, 2. 26</p>
                   <p>4200 Slagelse, Danmark</p>
-                  <p className="text-slate-500 text-xs mt-2">CVR: 42662215</p>
+                  <p className="text-slate-500 text-xs mt-2">VAT: 42662215</p>
                 </div>
               </div>
             </div>
