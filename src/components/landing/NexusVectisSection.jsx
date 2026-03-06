@@ -5,43 +5,43 @@ import { Brain, Globe2, Layers, Zap, ShieldCheck, TrendingUp, Eye, BarChart3 } f
 const features = [
   {
     icon: Globe2,
-    title: "Realtids flådeoverblik",
-    description: "AIS, GPS, kurs, hastighed og motorparametre samlet i ét visuelt kontrolrum — alle skibe, hele tiden.",
+    title: "Real-time Fleet Overview",
+    description: "AIS, GPS, heading, speed and engine parameters unified in one visual control room — every vessel, all the time.",
   },
   {
     icon: Brain,
-    title: "AI-drevet beslutningsstøtte",
-    description: "Forklarbare anbefalinger fra H.A.R.B.O.R-motoren: rutejusteringer, hastighedsprofiler og anløbsplanlægning med fuldt rationale.",
+    title: "AI-Driven Decision Support",
+    description: "Explainable recommendations from the H.A.R.B.O.R engine: route adjustments, speed profiles and port call planning with full rationale.",
   },
   {
     icon: Eye,
-    title: "Holografisk 3D-visualisering",
-    description: "Lag-baseret 3D-kontrolrum med ruter, vejr, risikozoner og kapacitet — læsbar situationsforståelse på få sekunder.",
+    title: "Holographic 3D Visualization",
+    description: "Layer-based 3D control room with routes, weather, risk zones and capacity — full situational awareness in seconds.",
   },
   {
     icon: Layers,
-    title: "Vendor-agnostisk integration",
-    description: "Lægger sig ovenpå eksisterende systemer via API'er og standardprotokoller. Ingen big-bang replacement.",
+    title: "Vendor-Agnostic Integration",
+    description: "Sits on top of existing systems via APIs and standard protocols. No big-bang replacement required.",
   },
   {
     icon: ShieldCheck,
-    title: "Intelligent alarmering",
-    description: "Prioriterede alarmer med kontekst og anbefalet handling — ikke alarm-spam. Systemet fortæller dig hvad og hvorfor.",
+    title: "Intelligent Alerting",
+    description: "Prioritized alerts with context and recommended action — not alarm spam. The system tells you what and why.",
   },
   {
     icon: TrendingUp,
-    title: "Simulering & læring",
-    description: "Spol frem i tid og test beslutninger inden de tages. Platformen lærer af historiske forløb og forbedrer sig løbende.",
+    title: "Simulation & Continuous Learning",
+    description: "Fast-forward in time and test decisions before they're made. The platform learns from historical outcomes and improves over time.",
   },
   {
     icon: Zap,
-    title: "Havn & basekoordinering",
-    description: "Kajplaner, slot-tider, bunkring og terminalkapacitet synkroniseret med skibenes ankomst- og afgangsprognoser.",
+    title: "Port & Base Coordination",
+    description: "Berth plans, slot times, bunkering and terminal capacity synchronized with vessel arrival and departure forecasts.",
   },
   {
     icon: BarChart3,
-    title: "Strategisk analyse",
-    description: "KPI'er, tendenser og scenarier til ledelsesniveauet — fra daglig drift til flådefornyelse og investeringsbeslutninger.",
+    title: "Strategic Analytics",
+    description: "KPIs, trends and scenarios for management — from daily operations to fleet renewal and investment decisions.",
   },
 ];
 
