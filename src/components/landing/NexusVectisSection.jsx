@@ -67,7 +67,7 @@ export default function NexusVectisSection() {
           transition={{ duration: 0.9 }}
           className="max-w-4xl mb-24"
         >
-          <span className="text-cyan-400 text-xs font-bold tracking-[0.3em] uppercase">Platformen</span>
+          <span className="text-cyan-400 text-xs font-bold tracking-[0.3em] uppercase">The Platform</span>
 
           <div className="mt-6 flex items-baseline gap-5 flex-wrap">
             <h2 className="font-black text-white tracking-tighter leading-none" style={{ fontSize: "clamp(3rem, 7vw, 6rem)" }}>
