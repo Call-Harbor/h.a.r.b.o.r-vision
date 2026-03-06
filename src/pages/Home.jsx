@@ -6,8 +6,6 @@ import FeaturesSection from "@/components/landing/FeaturesSection";
 import HowItWorks from "@/components/landing/HowItWorks";
 import StatsSection from "@/components/landing/StatsSection";
 import CTASection from "@/components/landing/CTASection";
-import TrustedBy from "@/components/landing/TrustedBy";
-import Testimonials from "@/components/landing/Testimonials";
 import ContactSection from "@/components/landing/ContactSection";
 import Footer from "@/components/landing/Footer";
 
