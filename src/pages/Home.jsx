@@ -13,12 +13,12 @@ export default function Home() {
   return (
     <div className="bg-[#060a1a] min-h-screen">
       <Navbar />
-      <HeroSection />
+      <section id="platform"><HeroSection /></section>
       <AboutEngine />
-      <FeaturesSection />
-      <HowItWorks />
+      <section id="features"><FeaturesSection /></section>
+      <section id="how-it-works"><HowItWorks /></section>
       <StatsSection />
-      <ContactSection />
+      <section id="contact"><ContactSection /></section>
       <CTASection />
       <Footer />
     </div>

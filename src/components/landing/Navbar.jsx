@@ -2,7 +2,17 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Waves, Menu, X } from "lucide-react";
 
-const navLinks = ["Platform", "Features", "How It Works", "Contact"];
+const navLinks = [
+  { label: "Platform", id: "platform" },
+  { label: "Features", id: "features" },
+  { label: "How It Works", id: "how-it-works" },
+  { label: "Contact", id: "contact" },
+];
+
+const scrollTo = (id) => {
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: "smooth" });
+};
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
