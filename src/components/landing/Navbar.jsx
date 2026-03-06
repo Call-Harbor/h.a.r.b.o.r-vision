@@ -8,7 +8,6 @@ const navLinks = [
   { label: "Platform", id: "platform" },
   { label: "Features", id: "features" },
   { label: "How It Works", id: "how-it-works" },
-  { label: "Contact", id: "contact" },
 ];
 
 const scrollTo = (id) => {
