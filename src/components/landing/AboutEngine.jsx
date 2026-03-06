@@ -45,13 +45,7 @@ export default function AboutEngine() {
               No noise. No false alarms. Just intelligence that makes your fleet move faster, smarter, and more profitably.
             </p>
 
-            <motion.div
-              initial={{ scaleX: 0 }}
-              whileInView={{ scaleX: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1, delay: 0.5 }}
-              className="mt-12 h-px bg-gradient-to-r from-cyan-500/50 via-teal-400/30 to-transparent origin-left"
-            />
+
           </motion.div>
 
           <motion.div
