@@ -57,21 +57,17 @@ export default function CTASection() {
         </motion.h2>
 
         <p className="mt-10 text-slate-400 text-xl font-light max-w-2xl mx-auto leading-relaxed">
-          Book a demo and experience how H.A.R.B.O.R Vision transforms your maritime operations with AI-driven intelligence and holographic visualization.
+          Get in touch to learn how H.A.R.B.O.R Vision transforms your maritime operations with AI-driven intelligence and real-time optimization.
         </p>
 
         <div className="mt-14 flex flex-col sm:flex-row gap-5 justify-center items-center">
-          <button className="group relative inline-flex items-center gap-3 px-14 py-6 rounded-full bg-gradient-to-r from-cyan-500 to-teal-400 text-[#01030a] font-black text-base tracking-widest uppercase overflow-hidden transition-all duration-300 hover:shadow-[0_0_100px_rgba(0,212,255,0.5)] hover:scale-105">
-            <span className="relative z-10">Book a Demo</span>
-            <ArrowRight className="relative z-10 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </button>
           <button className="px-12 py-6 rounded-full border border-white/10 text-slate-300 font-medium text-base tracking-widest uppercase backdrop-blur-sm hover:border-cyan-500/40 hover:text-white hover:bg-white/5 transition-all duration-300">
             Contact Us
           </button>
         </div>
 
         <p className="mt-8 text-slate-600 text-sm">
-          No commitment · Free first demo · Response within 24 hours
+          Response within 24 hours
         </p>
       </motion.div>
     </section>
