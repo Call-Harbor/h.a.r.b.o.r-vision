@@ -30,9 +30,13 @@ export default function StatsSection() {
               transition={{ delay: i * 0.12, duration: 0.6 }}
               className="text-center group"
             >
-              <div className="text-5xl sm:text-6xl lg:text-7xl font-black bg-gradient-to-b from-white via-cyan-100 to-slate-400 bg-clip-text text-transparent group-hover:from-cyan-300 group-hover:to-teal-200 transition-all duration-500">
+              <motion.div 
+                animate={{ textShadow: ["0_0_0px_rgba(0,212,255,0.2)", "0_0_20px_rgba(0,212,255,0.5)", "0_0_0px_rgba(0,212,255,0.2)"] }}
+                transition={{ duration: 3, repeat: Infinity, delay: i * 0.2 }}
+                className="text-5xl sm:text-6xl lg:text-7xl font-black bg-gradient-to-b from-cyan-200 via-cyan-100 to-teal-200 bg-clip-text text-transparent group-hover:from-cyan-300 group-hover:to-teal-300 transition-all duration-500"
+              >
                 {s.value}
-              </div>
+              </motion.div>
               <div className="mt-3 text-white font-bold text-sm tracking-wide">{s.label}</div>
               <div className="text-slate-500 text-xs mt-1">{s.sub}</div>
             </motion.div>
