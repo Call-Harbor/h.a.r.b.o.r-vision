@@ -8,7 +8,7 @@ import HowItWorks from "@/components/landing/HowItWorks";
 import StatsSection from "@/components/landing/StatsSection";
 import NexusVectisSection from "@/components/landing/NexusVectisSection";
 import CTASection from "@/components/landing/CTASection";
-import ContactSection from "@/components/landing/ContactSection";
+
 import Footer from "@/components/landing/Footer";
 
 export default function Home() {
@@ -22,7 +22,7 @@ export default function Home() {
       <section id="how-it-works"><HowItWorks /></section>
       <StatsSection />
       <NexusVectisSection />
-      <section id="contact"><ContactSection /></section>
+
       <CTASection />
       <Footer />
     </div>
