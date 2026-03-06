@@ -42,14 +42,19 @@ export default function CTASection() {
           The Future of Maritime Operations
         </motion.p>
 
-        <h2 className="font-black text-white tracking-tighter leading-[0.9]" style={{ fontSize: "clamp(3rem, 8vw, 7rem)" }}>
+        <motion.h2 
+          animate={{ textShadow: ["0_0_60px_rgba(0,212,255,0.2)", "0_0_120px_rgba(0,212,255,0.4)", "0_0_60px_rgba(0,212,255,0.2)"] }}
+          transition={{ duration: 4, repeat: Infinity }}
+          className="font-black text-white tracking-tighter leading-[0.9]" 
+          style={{ fontSize: "clamp(3rem, 8vw, 7rem)" }}
+        >
           Ready to see your
           <br />
           fleet{" "}
           <span className="bg-gradient-to-r from-cyan-300 via-teal-200 to-cyan-300 bg-clip-text text-transparent">
             like never before?
           </span>
-        </h2>
+        </motion.h2>
 
         <p className="mt-10 text-slate-400 text-xl font-light max-w-2xl mx-auto leading-relaxed">
           Book a demo and experience how H.A.R.B.O.R Vision transforms your maritime operations with AI-driven intelligence and holographic visualization.
