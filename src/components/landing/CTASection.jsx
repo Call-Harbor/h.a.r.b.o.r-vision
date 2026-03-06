@@ -1,59 +1,72 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Zap } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export default function CTASection() {
   return (
-    <section className="relative py-40 px-6 bg-[#03060f] overflow-hidden">
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent" />
+    <section className="relative py-48 px-6 bg-[#01030a] overflow-hidden">
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cyan-500/30 to-transparent" />
 
-      {/* Large background orb */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] rounded-full bg-gradient-to-r from-cyan-500/[0.07] via-teal-400/[0.05] to-cyan-500/[0.07] blur-[140px] pointer-events-none" />
+      {/* Massive glow */}
+      <motion.div
+        animate={{ scale: [1, 1.15, 1], opacity: [0.6, 1, 0.6] }}
+        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[600px] rounded-full bg-gradient-to-r from-cyan-500/[0.12] via-teal-400/[0.08] to-cyan-500/[0.12] blur-[160px] pointer-events-none"
+      />
 
-      {/* Decorative rings */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full border border-cyan-500/5 pointer-events-none" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full border border-cyan-500/8 pointer-events-none" />
+      {/* Concentric rings */}
+      {[800, 600, 400].map((size, i) => (
+        <motion.div
+          key={size}
+          animate={{ scale: [1, 1.05, 1], opacity: [0.04, 0.08, 0.04] }}
+          transition={{ duration: 6 + i * 2, repeat: Infinity, ease: "easeInOut", delay: i * 0.5 }}
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border border-cyan-400/20 pointer-events-none"
+          style={{ width: size, height: size }}
+        />
+      ))}
 
       <motion.div
-        initial={{ opacity: 0, y: 40 }}
+        initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.8 }}
-        className="relative max-w-4xl mx-auto text-center"
+        transition={{ duration: 0.9 }}
+        className="relative max-w-5xl mx-auto text-center"
       >
-        <div className="flex justify-center mb-8">
-          <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-cyan-500/20 to-teal-400/10 flex items-center justify-center border border-cyan-500/20">
-            <Zap className="w-7 h-7 text-cyan-400" />
-          </div>
-        </div>
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2 }}
+          className="text-cyan-400 text-xs font-bold tracking-[0.3em] uppercase mb-8"
+        >
+          The Future of Maritime Operations
+        </motion.p>
 
-        <h2 className="text-4xl sm:text-5xl lg:text-7xl font-black text-white leading-tight tracking-tight">
+        <h2 className="font-black text-white tracking-tighter leading-[0.9]" style={{ fontSize: "clamp(3rem, 8vw, 7rem)" }}>
           Ready to see your
           <br />
           fleet{" "}
-          <span className="bg-gradient-to-r from-cyan-300 via-teal-300 to-cyan-200 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-cyan-300 via-teal-200 to-cyan-300 bg-clip-text text-transparent">
             like never before?
           </span>
         </h2>
-        <p className="mt-8 text-slate-400 text-lg sm:text-xl font-light max-w-2xl mx-auto leading-relaxed">
-          Book a demo and experience how H.A.R.B.O.R Vision transforms your
-          maritime operations with AI-driven intelligence and holographic
-          visualization — live, in real time.
+
+        <p className="mt-10 text-slate-400 text-xl font-light max-w-2xl mx-auto leading-relaxed">
+          Book a demo and experience how H.A.R.B.O.R Vision transforms your maritime operations with AI-driven intelligence and holographic visualization.
         </p>
 
-        <div className="mt-12 flex flex-col sm:flex-row gap-5 justify-center items-center">
-          <button className="group relative inline-flex items-center gap-3 px-12 py-5 rounded-full bg-gradient-to-r from-cyan-500 to-teal-400 text-[#03060f] font-black text-sm tracking-widest uppercase overflow-hidden transition-all duration-300 hover:shadow-[0_0_80px_rgba(0,212,255,0.35)] hover:scale-105">
+        <div className="mt-14 flex flex-col sm:flex-row gap-5 justify-center items-center">
+          <button className="group relative inline-flex items-center gap-3 px-14 py-6 rounded-full bg-gradient-to-r from-cyan-500 to-teal-400 text-[#01030a] font-black text-base tracking-widest uppercase overflow-hidden transition-all duration-300 hover:shadow-[0_0_100px_rgba(0,212,255,0.5)] hover:scale-105">
             <span className="relative z-10">Book a Demo</span>
-            <ArrowRight className="relative z-10 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity" />
+            <ArrowRight className="relative z-10 w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
-          <button className="px-10 py-5 rounded-full border border-slate-600/60 text-slate-300 font-medium text-sm tracking-widest uppercase hover:border-cyan-500/50 hover:text-white transition-all duration-300">
+          <button className="px-12 py-6 rounded-full border border-white/10 text-slate-300 font-medium text-base tracking-widest uppercase backdrop-blur-sm hover:border-cyan-500/40 hover:text-white hover:bg-white/5 transition-all duration-300">
             Contact Us
           </button>
         </div>
 
-        <p className="mt-8 text-slate-600 text-xs tracking-wide">
-          No commitment. Free first demo. We'll reach out within 24 hours.
+        <p className="mt-8 text-slate-600 text-sm">
+          No commitment · Free first demo · Response within 24 hours
         </p>
       </motion.div>
     </section>
