@@ -83,14 +83,14 @@ export default function NexusVectisSection() {
           </p>
 
           <p className="mt-8 text-slate-300 text-xl font-light leading-relaxed max-w-3xl">
-            Nexus Vectis er nervestyringssystemet for moderne maritime flåder —{" "}
-            <span className="text-white font-medium">én samlet, intelligent platform</span>{" "}
-            der forbinder skibe, havne, kontrolrum og datakilder og oversætter kompleks AI-logik til{" "}
-            <span className="text-cyan-300">menneskeligt forståelige beslutninger.</span>
+            Nexus Vectis is the nervous system of the modern maritime fleet —{" "}
+            <span className="text-white font-medium">one unified, intelligent platform</span>{" "}
+            connecting vessels, ports, control rooms and data sources, translating complex AI logic into{" "}
+            <span className="text-cyan-300">human-readable decisions.</span>
           </p>
 
           <p className="mt-5 text-slate-500 leading-relaxed text-base max-w-2xl">
-            Det er den konkrete løsning, dine operatører logger ind i hver dag — og det visuelle lag, der giver din organisation fuld situationsforståelse uden at drukne i data.
+            It's the solution your operators log into every day — the visual layer that gives your entire organization full situational awareness without drowning in data.
           </p>
 
           {/* Divider line */}
