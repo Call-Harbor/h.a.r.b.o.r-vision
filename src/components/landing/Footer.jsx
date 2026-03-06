@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 gap-16 mb-16">
           {/* Brand & Description */}
           <div>
-            <img src={LOGO_URL} alt="H.A.R.B.O.R Vision" className="h-12 w-auto mb-6" />
+            <img src={LOGO_URL} alt="H.A.R.B.O.R Vision" className="h-32 w-auto mb-8" />
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
               Real-time intelligence for maritime operations. Every decision, optimized.
             </p>
