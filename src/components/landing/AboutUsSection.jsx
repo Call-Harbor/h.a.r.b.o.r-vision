@@ -18,19 +18,18 @@ export default function AboutUsSection() {
         >
           <span className="inline-flex items-center gap-2 text-cyan-400 text-xs font-bold tracking-[0.3em] uppercase mb-6">
             <span className="w-8 h-px bg-cyan-400/60" />
-            Our Story
+            Why H.A.R.B.O.R
             <span className="w-8 h-px bg-cyan-400/60" />
           </span>
           <h2 className="font-black text-white tracking-tighter leading-tight mb-6" style={{ fontSize: "clamp(2.5rem, 6vw, 4.5rem)" }}>
-            We're fixing how{" "}
             <span className="bg-gradient-to-r from-cyan-300 to-teal-200 bg-clip-text text-transparent">
-              the world's fleets
+              Intelligence wins.
             </span>{" "}
-            make decisions.
+            Information loses.
           </h2>
           <p className="text-slate-400 text-lg max-w-3xl leading-relaxed">
-            H.A.R.B.O.R was built because maritime is broken. Operators drown in data. Leadership flies blind. 
-            Fuel budgets blow. Port calls miss their windows. And the best decisions are made with outdated information.
+            Maritime operations are drowning in real-time data but starving for real-time intelligence. Ships generate terabytes. Leadership needs clarity. 
+            H.A.R.B.O.R solves that — synthesizing vessel positions, weather, fuel, market signals, and port schedules into one actionable decision stream.
           </p>
         </motion.div>
 
@@ -38,18 +37,18 @@ export default function AboutUsSection() {
           {[
             {
               icon: Lightbulb,
-              title: "Built on Reality",
-              desc: "Not theory. Every feature comes from talking to ship operators, port planners, and fleet managers who live this every day."
+              title: "Data → Intelligence",
+              desc: "Every vessel's position, speed, weather, fuel burn rate, and cargo status flows in real time. H.A.R.B.O.R synthesizes it into one clear recommendation."
             },
             {
               icon: Users,
-              title: "For the People",
-              desc: "We design for the humans in the control room. Smart tech that doesn't require a PhD to understand."
+              title: "No PhD Required",
+              desc: "Built for operators and captains. Reasoning is transparent. No black boxes. Every decision shows its logic."
             },
             {
               icon: Target,
-              title: "Results Matter",
-              desc: "We don't count features. We count fuel saved, schedules kept, and decisions made with confidence."
+              title: "Measurable Impact",
+              desc: "15% fuel savings. Zero missed port windows. Reduced decision latency from hours to seconds. That's what we optimize for."
             }
           ].map((item, i) => (
             <motion.div
@@ -77,9 +76,8 @@ export default function AboutUsSection() {
           className="p-8 rounded-2xl border border-slate-800/70 bg-gradient-to-r from-cyan-500/[0.05] to-teal-500/[0.05]"
         >
           <p className="text-slate-300 text-lg leading-relaxed">
-            <span className="text-white font-semibold">We're a team of engineers, designers, and maritime experts</span> obsessed with turning complexity into clarity. 
-            We believe that the shipping industry deserves smarter tools — tools that let operators focus on what they do best: 
-            keeping ships safe, on schedule, and profitable.
+            Built by engineers who spent years in maritime operations. We know the bottlenecks. We know what decisions matter. 
+            <span className="text-white font-semibold"> H.A.R.B.O.R doesn't add noise — it removes it.</span>
           </p>
         </motion.div>
       </div>
