@@ -5,6 +5,7 @@ import AboutEngine from "@/components/landing/AboutEngine";
 import FeaturesSection from "@/components/landing/FeaturesSection";
 import HowItWorks from "@/components/landing/HowItWorks";
 import StatsSection from "@/components/landing/StatsSection";
+import NexusVectisSection from "@/components/landing/NexusVectisSection";
 import CTASection from "@/components/landing/CTASection";
 import ContactSection from "@/components/landing/ContactSection";
 import Footer from "@/components/landing/Footer";
