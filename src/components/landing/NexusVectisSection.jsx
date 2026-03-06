@@ -147,7 +147,7 @@ export default function NexusVectisSection() {
           transition={{ duration: 1, delay: 0.4 }}
           className="mt-16 flex flex-wrap gap-6 items-center"
         >
-          {["Realtidsdrift", "Træningssimulering", "Incident-analyse", "Multi-bruger"].map((tag) => (
+          {["Real-time Operations", "Training Simulation", "Incident Analysis", "Multi-user"].map((tag) => (
             <span key={tag} className="flex items-center gap-2 text-slate-500 text-xs tracking-widest uppercase">
               <span className="w-1.5 h-1.5 rounded-full bg-cyan-500/60" />
               {tag}
