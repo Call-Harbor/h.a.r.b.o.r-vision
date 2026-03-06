@@ -27,6 +27,11 @@ export default function Footer() {
               Next-generation AI-driven maritime operations. The bridge between
               classical shipping and autonomous, data-driven sailing.
             </p>
+            <div className="mt-5 text-slate-600 text-xs leading-relaxed space-y-1">
+              <p>Danas Have 65, 2. 26</p>
+              <p>4200 Slagelse, Danmark</p>
+              <p>CVR: 43492721</p>
+            </div>
           </div>
 
           {Object.entries(links).map(([title, items]) => (
