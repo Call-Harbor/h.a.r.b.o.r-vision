@@ -1,31 +1,31 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Satellite, Cpu, MonitorDot, Lightbulb } from "lucide-react";
+import { Zap, Brain, TrendingUp, Anchor } from "lucide-react";
 
 const steps = [
   {
     num: "01",
-    icon: Satellite,
-    title: "Data Ingestion",
-    desc: "AIS positions, weather feeds, port capacity and historical patterns aggregated continuously.",
+    icon: Zap,
+    title: "Ingest Everything",
+    desc: "Vessel telemetry, AIS, weather forecasts, port schedules, fuel prices, market signals — 24/7 streaming.",
   },
   {
     num: "02",
-    icon: Cpu,
-    title: "AI Processing",
-    desc: "The H.A.R.B.O.R engine processes all data streams and identifies optimal scenarios in milliseconds.",
+    icon: Brain,
+    title: "Synthesize",
+    desc: "The H.A.R.B.O.R engine runs millions of scenario simulations. Which route saves fuel? Which berth opens first? What if weather shifts?",
   },
   {
     num: "03",
-    icon: MonitorDot,
-    title: "3D Visualization",
-    desc: "Data surfaces in an intuitive holographic control room — a complete picture of your entire fleet.",
+    icon: TrendingUp,
+    title: "Rank & Explain",
+    desc: "One clear recommendation surfaces first. Full reasoning chain visible. Operators know exactly why H.A.R.B.O.R is recommending it.",
   },
   {
     num: "04",
-    icon: Lightbulb,
-    title: "Decisive Action",
-    desc: "Operators receive clear, ranked recommendations and act with full situational awareness.",
+    icon: Anchor,
+    title: "Execute",
+    desc: "Send the command. Track execution. Get the next decision. No lag. No guesswork.",
   },
 ];
 
@@ -42,17 +42,17 @@ export default function HowItWorks() {
           className="text-center mb-24"
         >
           <span className="text-cyan-400 text-xs font-bold tracking-[0.25em] uppercase">
-            The Process
+            How It Works
           </span>
           <h2 className="mt-5 text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight">
-            From raw data
-            <br />
             <span className="bg-gradient-to-r from-cyan-300 to-teal-300 bg-clip-text text-transparent">
-              to decisive action.
+              Real-time intelligence
             </span>
+            <br />
+            in four automated steps.
           </h2>
-          <p className="mt-5 text-slate-400 max-w-md mx-auto text-lg font-light">
-            Four steps. Fully automated. Sub-second.
+          <p className="mt-5 text-slate-400 max-w-2xl mx-auto text-lg font-light">
+            Every second, H.A.R.B.O.R ingests data, simulates the future, and delivers the one decision you need to make right now.
           </p>
         </motion.div>
 
