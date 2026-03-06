@@ -23,25 +23,26 @@ export default function AboutEngine() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.9 }}
           >
-            <span className="text-cyan-400 text-xs font-bold tracking-[0.3em] uppercase">The Core Engine</span>
-            <h2 className="mt-6 font-black text-white tracking-tighter leading-none" style={{ fontSize: "clamp(2.5rem, 6vw, 5rem)" }}>
-              Meet the
-              <br />
+            <span className="inline-flex items-center gap-2 text-cyan-400 text-xs font-bold tracking-[0.3em] uppercase mb-6">
+              <span className="w-8 h-px bg-cyan-400/60" />
+              The Core Engine
+              <span className="w-8 h-px bg-cyan-400/60" />
+            </span>
+            <h2 className="font-black text-white tracking-tighter leading-tight mb-6" style={{ fontSize: "clamp(2.5rem, 6vw, 5rem)" }}>
+              The{" "}
               <span className="bg-gradient-to-r from-cyan-300 via-teal-200 to-cyan-300 bg-clip-text text-transparent">
                 H.A.R.B.O.R
               </span>
               <br />
-              Intelligence
+              Intelligence Engine
             </h2>
-            <p className="mt-4 text-slate-500 text-sm tracking-[0.15em] uppercase">
-              Autonomous Routing & Base Operations Regulator
+            <p className="text-slate-300 text-lg leading-relaxed mb-6">
+              It sees everything. Vessel positions, weather, port capacity, market signals, crew schedules, fuel prices. 
+              Then it translates that into{" "}
+              <span className="text-white font-semibold">the one decision you need to make right now</span> — with full reasoning laid out.
             </p>
-            <p className="mt-8 text-slate-300 leading-relaxed text-xl font-light">
-              An AI engine that ingests vessel positions, weather patterns, port capacity and operational constraints in real time — then translates all of that into{" "}
-              <span className="text-white font-medium">optimal decisions, scenarios and recommendations</span> for your entire fleet.
-            </p>
-            <p className="mt-5 text-slate-500 leading-relaxed text-base">
-              Think of it as a mission-critical intelligence that never sleeps, never misses a data point, and always delivers the most complete decision foundation.
+            <p className="text-slate-400 leading-relaxed">
+              No noise. No false alarms. Just intelligence that makes your fleet move faster, smarter, and more profitably.
             </p>
 
             <motion.div
