@@ -61,9 +61,9 @@ export default function CTASection() {
         </p>
 
         <div className="mt-14 flex flex-col sm:flex-row gap-5 justify-center items-center">
-          <button className="px-12 py-6 rounded-full border border-white/10 text-slate-300 font-medium text-base tracking-widest uppercase backdrop-blur-sm hover:border-cyan-500/40 hover:text-white hover:bg-white/5 transition-all duration-300">
+          <a href="mailto:ai@harborvision.dev" className="inline-flex px-12 py-6 rounded-full border border-white/10 text-slate-300 font-medium text-base tracking-widest uppercase backdrop-blur-sm hover:border-cyan-500/40 hover:text-white hover:bg-white/5 transition-all duration-300">
             Contact Us
-          </button>
+          </a>
         </div>
 
         <p className="mt-8 text-slate-600 text-sm">

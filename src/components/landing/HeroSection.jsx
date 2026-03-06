@@ -168,9 +168,9 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 1.3 }}
           className="mt-14 flex flex-col sm:flex-row gap-5 justify-center items-center"
         >
-          <button onClick={() => document.getElementById("platform")?.scrollIntoView({ behavior: "smooth" })} className="inline-flex items-center gap-2 px-10 py-5 rounded-full border border-white/10 text-slate-300 font-medium text-sm tracking-widest uppercase backdrop-blur-sm hover:border-cyan-500/40 hover:text-white hover:bg-white/5 transition-all duration-300">
+          <a href="https://nexusvectis.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-10 py-5 rounded-full border border-white/10 text-slate-300 font-medium text-sm tracking-widest uppercase backdrop-blur-sm hover:border-cyan-500/40 hover:text-white hover:bg-white/5 transition-all duration-300">
             Explore the Platform
-          </button>
+          </a>
         </motion.div>
 
         {/* Scroll micro-stat strip */}
