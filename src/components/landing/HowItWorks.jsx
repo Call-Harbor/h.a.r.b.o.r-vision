@@ -80,18 +80,26 @@ export default function HowItWorks() {
                 className="relative flex flex-col items-center text-center"
               >
                 {/* Circle */}
-                <div className="relative w-[7rem] h-[7rem] rounded-full border border-slate-700/80 bg-[#080d20] flex items-center justify-center mb-7 group">
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-cyan-500/10 to-transparent" />
+                <motion.div 
+                  animate={{ boxShadow: ["0_0_0px_rgba(0,212,255,0.1)", "0_0_30px_rgba(0,212,255,0.4)", "0_0_0px_rgba(0,212,255,0.1)"] }}
+                  transition={{ duration: 3, repeat: Infinity, delay: i * 0.5 }}
+                  className="relative w-[7rem] h-[7rem] rounded-full border border-cyan-500/50 bg-[#080d20] flex items-center justify-center mb-7 group"
+                >
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-cyan-500/15 to-transparent" />
                   <motion.div
-                    animate={{ opacity: [0.3, 0.8, 0.3] }}
-                    transition={{ duration: 3, repeat: Infinity, delay: i * 0.5 }}
-                    className="absolute inset-2 rounded-full border border-cyan-500/20"
+                    animate={{ opacity: [0.2, 1, 0.2] }}
+                    transition={{ duration: 2.5, repeat: Infinity, delay: i * 0.5 }}
+                    className="absolute inset-2 rounded-full border border-cyan-400/40"
                   />
-                  <s.icon className="w-8 h-8 text-cyan-400 relative z-10" />
-                  <span className="absolute -top-1 -right-1 w-7 h-7 rounded-full bg-gradient-to-br from-cyan-500 to-teal-400 text-[#03060f] text-[10px] font-black flex items-center justify-center shadow-[0_0_15px_rgba(0,212,255,0.4)]">
+                  <s.icon className="w-8 h-8 text-cyan-300 relative z-10" />
+                  <motion.span 
+                    animate={{ scale: [1, 1.1, 1] }}
+                    transition={{ duration: 2, repeat: Infinity, delay: i * 0.3 }}
+                    className="absolute -top-1 -right-1 w-7 h-7 rounded-full bg-gradient-to-br from-cyan-500 to-teal-400 text-[#03060f] text-[10px] font-black flex items-center justify-center shadow-[0_0_20px_rgba(0,212,255,0.6)]"
+                  >
                     {s.num}
-                  </span>
-                </div>
+                  </motion.span>
+                </motion.div>
                 <h3 className="text-white font-bold text-lg mb-2">{s.title}</h3>
                 <p className="text-slate-400 text-sm leading-relaxed font-light">{s.desc}</p>
               </motion.div>
