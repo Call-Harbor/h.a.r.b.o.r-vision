@@ -1,5 +1,7 @@
 import React from "react";
-import { Waves, Mail, MapPin, ExternalLink } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
+
+const LOGO_URL = "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69aac8b4ee3e86a32fa7d35f/f57aded0d_Harborlogo.png";
 
 export default function Footer() {
   return (
@@ -8,17 +10,9 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 gap-16 mb-16">
           {/* Brand & Description */}
           <div>
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-cyan-500 to-teal-400 flex items-center justify-center shadow-[0_0_20px_rgba(0,212,255,0.25)]">
-                <Waves className="w-4 h-4 text-[#03060f]" />
-              </div>
-              <div>
-                <span className="text-white font-black text-base">H.A.R.B.O.R</span>
-                <span className="text-slate-500 font-light text-base"> Vision</span>
-              </div>
-            </div>
+            <img src={LOGO_URL} alt="H.A.R.B.O.R Vision" className="h-12 w-auto mb-6" />
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
-              AI-driven maritime operations platform. Transforming how the world's fleets navigate, decide and operate.
+              Real-time intelligence for maritime operations. Every decision, optimized.
             </p>
           </div>
 
