@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "@/components/landing/Navbar";
 import HeroSection from "@/components/landing/HeroSection";
 import AboutEngine from "@/components/landing/AboutEngine";
+import AboutUsSection from "@/components/landing/AboutUsSection";
 import FeaturesSection from "@/components/landing/FeaturesSection";
 import HowItWorks from "@/components/landing/HowItWorks";
 import StatsSection from "@/components/landing/StatsSection";
