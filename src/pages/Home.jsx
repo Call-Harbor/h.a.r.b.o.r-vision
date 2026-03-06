@@ -20,6 +20,9 @@ export default function Home() {
       <FeaturesSection />
       <HowItWorks />
       <StatsSection />
+      <TrustedBy />
+      <Testimonials />
+      <ContactSection />
       <CTASection />
       <Footer />
     </div>
